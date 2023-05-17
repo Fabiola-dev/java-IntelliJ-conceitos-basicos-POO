@@ -1,3 +1,4 @@
+import Entidades.Cartao;
 import Entidades.Pessoa;
 
 import java.util.ArrayList;
@@ -17,6 +18,14 @@ public class Main {
         for (Pessoa pessoa: pessoas) {
             pessoa.verificarMaiorIdade(pessoas);
         }
+
+        System.out.println("---------------- Classe cartão-----------------");
+
+        Cartao cartao = new Cartao("01234", "João da Silva", 1520.0);
+
+        cartao.imprimirSaldo();
+        cartao.sacar(200.0);
+        cartao.depositar(2500.0);
 
 
     }
