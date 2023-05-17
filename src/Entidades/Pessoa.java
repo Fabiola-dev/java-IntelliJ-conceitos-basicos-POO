@@ -18,5 +18,12 @@ public class Pessoa {
 
     public void setIdade(int idade) { this.idade = idade; }
 
+    public void compararIdades() {
+        if (this.idade < 18) {
+            System.out.println(this.nome + " é menor de idade");
+        } else {
+            System.out.println(this.nome + " é maior de idade");
+        }
+    }
 
 }
