@@ -15,8 +15,9 @@ public class Main {
         pessoas.add(pessoa3);
 
         for (Pessoa pessoa: pessoas) {
-            pessoa.compararIdades();
+            pessoa.verificarMaiorIdade(pessoas);
         }
+
 
     }
 }
